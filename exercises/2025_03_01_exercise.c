@@ -15,6 +15,6 @@ int main(void)
 	puts(phrase);
 	found = strstr(phrase, find);
 	printf("Found '%s' at offset %d.\n", find, (int)(found-phrase));
-
+	// To continue searching, you need to reset the starting pointer to a position immediately after the location where the text was found	
 	return 0;
 }

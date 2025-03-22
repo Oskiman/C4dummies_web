@@ -1,6 +1,6 @@
 // Code from: https://c-for-dummies.com/blog/?p=6878
 // prefix & postfix
-// 2 loops, each outputs values of x, initiliased to 0
+// 2 loops, each outputs values of x, initialised to 0
 // The first uses prefix, the second uses postfix
 
 #include <stdio.h>

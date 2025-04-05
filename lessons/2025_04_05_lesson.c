@@ -1,3 +1,6 @@
+// switch does not work on const ints (see 2025_03_29)
+// solution is to hard code numbers
+
 #include <stdio.h>
 #include <math.h>
 

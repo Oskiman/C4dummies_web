@@ -19,9 +19,16 @@ int main(void)
 	printf("Enter value (>1): ");
 	scanf("%d", &value);
 	
-	printf("%d\n", value / base);
-	printf("%d\n", value % base);
+	//printf("%d\n", value / base);
+	//printf("%d\n", value % base);
+	while(value % base != 0)
+	{
+		printf("%d", value / base);
+		value /= base;
+		value %= base;
+	}	
 
+	printf("\n");
 
 	return 0;
 }

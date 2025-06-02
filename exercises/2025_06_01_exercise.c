@@ -9,12 +9,18 @@ int main(void)
 	int base = 0;
 	int value = 0;
 
-	printf("Enter base (>1 <11): ");
-	scanf("%d", &base);
+	// make sure input is within limits
+	while(base <= 1 || base >= 11)
+	{
+		printf("Enter base (>1 <11): ");
+		scanf("%d", &base);
+	}
 
 	printf("Enter value (>1): ");
 	scanf("%d", &value);
-
+	
+	printf("%d\n", value / base);
+	printf("%d\n", value % base);
 
 
 	return 0;

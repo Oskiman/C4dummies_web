@@ -1,6 +1,7 @@
 // C for Dummies exercise 2025_06_01
 // Write a program that translates values from base 10 to another base
 // Prompt for a base then for a value in decimal
+// NOTE: not yet finished, TODO: loads!
 
 #include <stdio.h>
 
@@ -19,13 +20,13 @@ int main(void)
 	printf("Enter value (>1): ");
 	scanf("%d", &value);
 	
-	//printf("%d\n", value / base);
-	//printf("%d\n", value % base);
 	while(value % base != 0)
 	{
 		printf("%d", value / base);
 		value /= base;
-		value %= base;
+		printf("%d\n", value);
+		if((value /= base) == 0)
+			printf("%d", value % base);
 	}	
 
 	printf("\n");
